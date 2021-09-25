@@ -10,6 +10,7 @@
 	box-sizing: border-box;
 	/* background-color:#D8D8D8 ; */
 	background-color: #131a22;
+	overflow-x: hidden;
 }
 
 .banner {
@@ -40,5 +41,13 @@
 	left: 50%;
 	margin-left: -100px;
 	background-color: transparent;
-	font-family: avenir;
+	font-family: "Avenir", sans-serif;
+}
+
+#base-container {
+	background: url(https://www.munichre.com/topics-online/en/digitalisation/tech-trend-radar-future-technologies-2019/_jcr_content/teaser/teaser16x9.png);
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: center center;
+	background-size: cover;
 }

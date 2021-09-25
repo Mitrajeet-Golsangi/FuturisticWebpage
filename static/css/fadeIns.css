@@ -1,0 +1,38 @@
+.fade-in-left {
+	transition: translateY(-50%);
+}
+.fade-in-right {
+	transition: translateY(50%);
+}
+
+.fade-in-left,
+.fade-in-right {
+	color: whitesmoke;
+	font-family: "Avenir", monospace;
+	opacity: 0;
+	transition: opacity 250ms ease-in, transform 400ms ease-in;
+}
+.fade-in-left.appear,
+.fade-in-right.appear {
+	transform: translateY(0);
+	opacity: 1;
+}
+.fade-img {
+	overflow: hidden;
+	border: 5px solid whitesmoke;
+	border-radius: 1%;
+}
+.top-img {
+	opacity: 1;
+	z-index: 2;
+	transition: opacity 2s ease-in-out;
+}
+.bottom-img {
+	z-index: -1;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.top-img:hover {
+	opacity: 0;
+}
