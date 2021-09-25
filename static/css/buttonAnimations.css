@@ -10,6 +10,7 @@
     padding-top: 2%;
     color: whitesmoke;
     background-color: transparent;
+    transition: 0.5s ease-in-out;
 }
 
 .button::before {
@@ -117,7 +118,7 @@
     border: 1px solid transparent;
     margin-bottom: 1rem;
     transition: cubic-bezier(0.075, 0.82, 0.165, 1);
-    background: linear-gradient(#2c4b38,#63d471);
+    background: linear-gradient(#febd69,#aa7d41);
     text-align: center;
 }
 

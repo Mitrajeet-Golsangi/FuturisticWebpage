@@ -1,5 +1,10 @@
 .card {
     height: 25rem;
+	text-size-adjust: 0.2rem;
+}
+
+.card-img-top {
+	height: 40%;
 }
 
 .card-title,
