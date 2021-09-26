@@ -15,7 +15,7 @@ const appearOnScroll = new IntersectionObserver((entries, appearOnScroll) => {
         } else {
             entry.target.classList.add('appear');
             console.log(audio);
-            // audio.play();
+            audio.play();
             setTimeout(() => {
                 document.getElementsByTagName("img")[0].style.opacity = 0;
             }, 2000);
