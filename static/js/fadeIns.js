@@ -7,7 +7,7 @@ const appearOptions = {
 const appearOnScroll = new IntersectionObserver((entries, appearOnScroll) => {
     entries.forEach(entry => {
 
-        let audio = entry.target.querySelector('audio');
+        // let audio = entry.target.querySelector('audio');
         let img = entry.target.querySelectorAll('img')[0];
 
         // Checking if the entry is intersecting don't toggle class
@@ -16,12 +16,12 @@ const appearOnScroll = new IntersectionObserver((entries, appearOnScroll) => {
             return;
         } else {
             entry.target.classList.add('appear');
-            audio.play()
-            audio.addEventListener("ended", () => console.log("End"));
+            // audio.play()
+            // audio.addEventListener("ended", () => console.log("End"));
 
             setTimeout(() => {
                 img.style.opacity = 0;
-            }, 2000);
+            }, 1000);
             appearOnScroll.unobserve(entry.target);
         }
     })
