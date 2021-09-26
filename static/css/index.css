@@ -93,7 +93,7 @@ background-color: #131a22;
 
 #base-container {
 	/* background: url(https://www.munichre.com/topics-online/en/digitalisation/tech-trend-radar-future-technologies-2019/_jcr_content/teaser/teaser16x9.png); */
-	background: url(./assets/base_container_bg.png);
+	background: url(../../assets/base_container_bg.png);
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	background-position: center center;
