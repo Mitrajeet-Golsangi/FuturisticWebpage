@@ -62,7 +62,7 @@ body{
 
 .navigator{
   position: absolute;
-  top: 0;
+  top: 100%;
     left: 50%;
 	  margin-left: -100px;
 }

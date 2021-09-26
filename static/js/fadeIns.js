@@ -1,12 +1,14 @@
 const sliders = document.querySelectorAll('.slide-in');
 const appearOptions = {
     threshold: 0,
-    rootMargin: "0% 0% -30% 0%"
+    rootMargin: "0% 0% -50% 0%"
 }
+
 const appearOnScroll = new IntersectionObserver((entries, appearOnScroll) => {
     entries.forEach(entry => {
 
-        let audio = entry.target.querySelectorAll('audio')[0];
+        let audio = entry.target.querySelector('audio');
+        let img = entry.target.querySelectorAll('img')[0];
 
         // Checking if the entry is intersecting don't toggle class
 
@@ -14,10 +16,11 @@ const appearOnScroll = new IntersectionObserver((entries, appearOnScroll) => {
             return;
         } else {
             entry.target.classList.add('appear');
-            console.log(audio);
-            audio.play();
+            audio.play()
+            audio.addEventListener("ended", () => console.log("End"));
+
             setTimeout(() => {
-                document.getElementsByTagName("img")[0].style.opacity = 0;
+                img.style.opacity = 0;
             }, 2000);
             appearOnScroll.unobserve(entry.target);
         }
@@ -28,3 +31,12 @@ const appearOnScroll = new IntersectionObserver((entries, appearOnScroll) => {
 sliders.forEach(slider => {
     appearOnScroll.observe(slider);
 })
+
+function pauseAll() {
+    const allAudios = document.getElementsByTagName('audio');
+    for (i in allAudios.length) {
+        allAudios[i].pause();
+        allAudios[i].currentTime = 0;
+        allAudios[i].volume = 0;
+    }
+}

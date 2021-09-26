@@ -21,20 +21,36 @@
 	overflow: hidden;
 	border: 5px solid whitesmoke;
 	border-radius: 1%;
-	object-fit: contain;
+	object-fit: cover;
 }
 .top-img {
 	opacity: 1;
 	z-index: 2;
 	transition: opacity 3s ease-in-out;
 }
-.bottom-img {
+.bottom-img-left {
 	z-index: -1;
 	position: absolute;
 	top: 0;
 	left: 0;
 	size: inherit;
 }
+.bottom-img-right {
+	z-index: -1;
+	position: absolute;
+	top: 0;
+	right: 0;
+	size: inherit;
+}
 .top-img:hover {
 	opacity: 1;
+}
+
+.fade-text {
+	padding: 2%;
+	border-radius: 5%;
+	background-color: rgba(0, 0, 0, 0.5);
+}
+.fade-text p{
+	background-color: transparent;
 }
