@@ -41,12 +41,13 @@
 }
 .banner-heading {
 	margin-top: -30%;
-	position: inherit;
+	position: absolute;
+	z-index: 400;
 	background-color: transparent;
-	opacity: 1;
 	color: azure;
 	font-family: "Avenir";
 }
+
 .fcontainer {
 	display: flex;
 	margin-top: 0;
