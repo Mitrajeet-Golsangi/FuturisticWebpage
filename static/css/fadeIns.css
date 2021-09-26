@@ -21,18 +21,20 @@
 	overflow: hidden;
 	border: 5px solid whitesmoke;
 	border-radius: 1%;
+	object-fit: contain;
 }
 .top-img {
 	opacity: 1;
 	z-index: 2;
-	transition: opacity 2s ease-in-out;
+	transition: opacity 3s ease-in-out;
 }
 .bottom-img {
 	z-index: -1;
 	position: absolute;
 	top: 0;
 	left: 0;
+	size: inherit;
 }
 .top-img:hover {
-	opacity: 0;
+	opacity: 1;
 }
