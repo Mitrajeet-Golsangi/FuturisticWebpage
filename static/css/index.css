@@ -12,6 +12,9 @@
 	background-color: #131a22;
 	overflow-x: hidden;
 }
+html{
+	scroll-behavior: smooth;
+}
 
 @font-face {
 	font-family: "Avenir";
@@ -114,3 +117,13 @@ background-color: #131a22;
 	background-color: transparent;
 	color: black;
 }
+@media only screen and (max-width: 500px) {
+	p{
+		font-size: small;
+	}
+  }
+@media only screen and (max-width: 400px) {
+	p{
+		font-size: smaller;
+	}
+  }

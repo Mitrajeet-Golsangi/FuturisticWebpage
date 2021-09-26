@@ -53,4 +53,22 @@
 }
 .fade-text p{
 	background-color: transparent;
+	font-family: 'Avenir';
+	font-size: 1.3rem;
 }
+
+@media only screen and (max-width: 500px) {
+	.fade-text p{
+		background-color: transparent;
+		font-family: 'Avenir';
+		font-size: 1rem;
+	}
+  }
+@media only screen and (max-width: 400px) {
+	.fade-text p{
+		background-color: transparent;
+		font-family: 'Avenir';
+		font-size: 1rem;
+		padding: 3%;
+	}
+  }
