@@ -1,7 +1,7 @@
 :root {
-	--animation-width: 80%;
-	--animation-height: 10%;
-	--animation-border-color: white;
+    --animation-width:80%;
+    --animation-height:10%;
+    --animation-border-color: white;
 }
 
 * {
@@ -57,6 +57,8 @@
 
 .item {
 	margin: 5%;
+background-color: #131a22;
+
 }
 
 .avenir {
